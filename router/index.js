@@ -1,9 +1,12 @@
 const express = require('express');
-
+const { getTasks } = require('../model/Todo');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render('index');
+    const tasks = getTasks();
+    res.render('index', {
+        tasks
+    });
 }
 );
 
