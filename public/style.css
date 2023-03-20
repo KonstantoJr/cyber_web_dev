@@ -1,0 +1,19 @@
+a.done {
+    color: inherit;
+    text-decoration: line-through;
+}
+
+a.not-done {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.not-done:hover {
+    color: inherit;
+    text-decoration: line-through;
+}
+
+a.done:hover {
+    color: inherit;
+    text-decoration: none;
+}
